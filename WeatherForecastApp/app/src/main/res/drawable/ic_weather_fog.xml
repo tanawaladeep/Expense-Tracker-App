@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Fog Lines -->
+    <path
+        android:strokeColor="#78909C"
+        android:strokeWidth="4.0"
+        android:strokeLineCap="round"
+        android:pathData="M18,22 L46,22 M14,30 L50,30 M16,38 L48,38 M22,46 L42,46" />
+</vector>

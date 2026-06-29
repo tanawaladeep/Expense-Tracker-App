@@ -5,10 +5,13 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.pm.PackageManager
 import android.graphics.drawable.GradientDrawable
+import android.location.Address
 import android.location.Geocoder
 import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
+import android.os.Build
+import androidx.core.location.LocationManagerCompat
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.EditorInfo
@@ -236,35 +239,63 @@ class MainActivity : AppCompatActivity() {
         if (lastKnown != null) {
             resolveCoordinatesAndLoad(lastKnown)
         } else {
-            // Request single location update
-            locationManager.requestSingleUpdate(provider, object : LocationListener {
-                override fun onLocationChanged(location: Location) {
-                    resolveCoordinatesAndLoad(location)
+            locationManager.requestLocationUpdates(
+                provider,
+                0L,
+                0f,
+                object : LocationListener {
+                    override fun onLocationChanged(location: Location) {
+                        locationManager.removeUpdates(this)
+                        resolveCoordinatesAndLoad(location)
+                    }
+                    override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {}
+                    override fun onProviderEnabled(provider: String) {}
+                    override fun onProviderDisabled(provider: String) {}
                 }
-                override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {}
-                override fun onProviderEnabled(provider: String) {}
-                override fun onProviderDisabled(provider: String) {}
-            }, null)
+            )
         }
     }
 
     private fun resolveCoordinatesAndLoad(location: Location) {
-        val resolvedCityName = try {
-            val geocoder = Geocoder(this, Locale.getDefault())
-            val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
-            // Use subAdminArea or locality or fallback
-            val address = addresses?.firstOrNull()
-            address?.locality ?: address?.subAdminArea ?: address?.adminArea
-        } catch (e: Exception) {
-            null
-        }
+        val geocoder = Geocoder(this, Locale.getDefault())
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            geocoder.getFromLocation(location.latitude, location.longitude, 1, object : Geocoder.GeocodeListener {
+                override fun onGeocode(addresses: MutableList<Address>) {
+                    val address = addresses.firstOrNull()
+                    val resolvedCityName = address?.locality ?: address?.subAdminArea ?: address?.adminArea
+                    runOnUiThread {
+                        if (resolvedCityName != null) {
+                            viewModel.fetchWeather(resolvedCityName)
+                        } else {
+                            Toast.makeText(this@MainActivity, "Could not resolve GPS location to city name.", Toast.LENGTH_SHORT).show()
+                            viewModel.loadLastSavedCityWeather()
+                        }
+                    }
+                }
 
-        if (resolvedCityName != null) {
-            viewModel.fetchWeather(resolvedCityName)
+                override fun onError(errorMessage: String?) {
+                    runOnUiThread {
+                        Toast.makeText(this@MainActivity, "Geocoder error: $errorMessage. Using default city.", Toast.LENGTH_SHORT).show()
+                        viewModel.loadLastSavedCityWeather()
+                    }
+                }
+            })
         } else {
-            // Fallback: fetch default city
-            Toast.makeText(this, "Could not resolve GPS location to city name. Using default.", Toast.LENGTH_SHORT).show()
-            viewModel.loadLastSavedCityWeather()
+            val resolvedCityName = try {
+                @Suppress("DEPRECATION")
+                val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
+                val address = addresses?.firstOrNull()
+                address?.locality ?: address?.subAdminArea ?: address?.adminArea
+            } catch (e: Exception) {
+                null
+            }
+
+            if (resolvedCityName != null) {
+                viewModel.fetchWeather(resolvedCityName)
+            } else {
+                Toast.makeText(this, "Could not resolve GPS location to city name. Using default.", Toast.LENGTH_SHORT).show()
+                viewModel.loadLastSavedCityWeather()
+            }
         }
     }
 

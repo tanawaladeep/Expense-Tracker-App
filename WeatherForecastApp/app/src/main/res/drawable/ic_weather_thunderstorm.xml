@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Dark Cloud Body -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M46,34c0,-4.4 -3.6,-8 -8,-8c-0.6,0 -1.2,0.1 -1.7,0.2c-1.8,-4.3 -6,-7.2 -10.8,-7.2c-5.8,0 -10.6,4.2 -11.4,9.8C9.5,29.5 6,33.3 6,38c0,5 4,9 9,9h31c5,0 9,-4 9,-9z" />
+    <!-- Lightning Bolt -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M30,46 L24,53 L31,53 L28,60 L38,50 L31,50 Z" />
+</vector>

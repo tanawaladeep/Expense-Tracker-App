@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Outer Glow / Sun Rings -->
+    <path
+        android:fillColor="#FFE082"
+        android:fillAlpha="0.3"
+        android:pathData="M32,32m-20,0a20,20 0,1 1,40 0a20,20 0,1 1,-40 0" />
+    <!-- Sun Body -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M32,32m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" />
+    <!-- Rays -->
+    <path
+        android:strokeColor="#FFA000"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M32,8 L32,13 M32,51 L32,56 M8,32 L13,32 M51,32 L56,32 M15,15 L18.5,18.5 M45.5,45.5 L49,49 M15,49 L18.5,45.5 M45.5,18.5 L49,15" />
+</vector>
