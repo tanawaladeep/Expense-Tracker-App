@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Base colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Material 3 Light Theme Colors -->
+    <color name="primary">#6750A4</color>
+    <color name="primary_container">#EADDFF</color>
+    <color name="secondary">#625B71</color>
+    <color name="background">#FEF7FF</color>
+    <color name="surface">#FEF7FF</color>
+    <color name="surface_variant">#E7E0EC</color>
+    <color name="on_surface">#1C1B1F</color>
+    <color name="on_surface_variant">#49454F</color>
+    <color name="hint_color">#79747E</color>
+    <color name="search_card_bg">#FFFFFF</color>
+
+    <!-- Note Pastel Colors (Light Mode) -->
+    <color name="note_color_default">#FFFFFF</color>
+    <color name="note_color_red">#FFCDD2</color>      <!-- Red 100 -->
+    <color name="note_color_orange">#FFE0B2</color>   <!-- Orange 100 -->
+    <color name="note_color_yellow">#FFF9C4</color>   <!-- Yellow 100 -->
+    <color name="note_color_green">#C8E6C9</color>    <!-- Green 100 -->
+    <color name="note_color_blue">#B3E5FC</color>     <!-- Light Blue 100 -->
+    <color name="note_color_purple">#E1BEE7</color>   <!-- Purple 100 -->
+    <color name="note_color_pink">#F8BBD0</color>     <!-- Pink 100 -->
 </resources>
