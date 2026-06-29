@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="?attr/colorSurfaceVariant"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Image placeholder -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="?attr/colorSurfaceVariant" />
+
+        <!-- Category label placeholder -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="12dp"
+            android:background="?attr/colorSurfaceVariant" />
+
+        <!-- Title placeholder -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/colorSurfaceVariant" />
+
+        <!-- Rating placeholder -->
+        <View
+            android:layout_width="100dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/colorSurfaceVariant" />
+
+        <!-- Price row placeholder -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="?attr/colorSurfaceVariant" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="16dp"
+                android:background="?attr/colorSurfaceVariant" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

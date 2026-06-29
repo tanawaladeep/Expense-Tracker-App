@@ -4,10 +4,10 @@ plugins {
 
 android {
     namespace = "com.example.e_commerceproductcatalogapp"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+    compileSdk = 37
+
+    buildFeatures {
+        viewBinding = true
     }
 
     defaultConfig {
@@ -41,6 +41,25 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Retrofit & Gson
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+
+    // Glide
+    implementation(libs.glide)
+
+    // Lifecycle (ViewModel, LiveData)
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.androidx.lifecycle.livedata)
+
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.android)
+
+    // UI Additions
+    implementation(libs.androidx.swiperefresh)
+    implementation(libs.shimmer)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

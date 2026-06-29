@@ -2,8 +2,26 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ECommerceProductCatalogApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_light</item>
+        <item name="android:windowBackground">@color/slate_50</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorSurfaceVariant">@color/slate_100</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/slate_900</item>
+        <item name="colorOnSurface">@color/slate_900</item>
+        <item name="colorOnSurfaceVariant">@color/slate_600</item>
     </style>
 
     <style name="Theme.ECommerceProductCatalogApp" parent="Base.Theme.ECommerceProductCatalogApp" />
+
+    <style name="ShapeAppearanceOverlay.App.ProductImage" parent="">
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
 </resources>

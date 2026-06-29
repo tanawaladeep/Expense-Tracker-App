@@ -2,6 +2,17 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ECommerceProductCatalogApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/primary_container</item>
+        <item name="colorPrimaryContainer">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_dark</item>
+        <item name="android:windowBackground">@color/slate_950</item>
+        <item name="colorSurface">@color/slate_900</item>
+        <item name="colorSurfaceVariant">@color/slate_800</item>
+        <item name="colorOnPrimary">@color/slate_950</item>
+        <item name="colorOnSecondary">@color/slate_950</item>
+        <item name="colorOnBackground">@color/slate_100</item>
+        <item name="colorOnSurface">@color/slate_100</item>
+        <item name="colorOnSurfaceVariant">@color/slate_400</item>
     </style>
 </resources>
