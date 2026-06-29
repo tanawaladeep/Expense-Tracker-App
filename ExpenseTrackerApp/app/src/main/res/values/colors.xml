@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Modern Color Palette -->
+    <color name="primary">#6366F1</color> <!-- Indigo -->
+    <color name="primary_variant">#4F46E5</color>
+    <color name="secondary">#10B981</color> <!-- Emerald -->
+    <color name="accent">#EC4899</color> <!-- Pink -->
+    
+    <!-- Backgrounds & Neutral -->
+    <color name="bg_light">#F8FAFC</color> <!-- Slate 50 -->
+    <color name="card_bg_light">#FFFFFF</color>
+    <color name="text_primary_light">#0F172A</color> <!-- Slate 900 -->
+    <color name="text_secondary_light">#64748B</color> <!-- Slate 500 -->
+    <color name="border_light">#E2E8F0</color> <!-- Slate 200 -->
+    
+    <!-- Dark Mode Colors -->
+    <color name="bg_dark">#0F172A</color> <!-- Slate 900 -->
+    <color name="card_bg_dark">#1E293B</color> <!-- Slate 800 -->
+    <color name="text_primary_dark">#F8FAFC</color> <!-- Slate 50 -->
+    <color name="text_secondary_dark">#94A3B8</color> <!-- Slate 400 -->
+    <color name="border_dark">#334155</color> <!-- Slate 700 -->
+
+    <!-- Category Colors (Food) -->
+    <color name="cat_food_bg">#FFF3E0</color>
+    <color name="cat_food_accent">#EF6C00</color>
+    
+    <!-- Category Colors (Travel) -->
+    <color name="cat_travel_bg">#E0F7FA</color>
+    <color name="cat_travel_accent">#00838F</color>
+    
+    <!-- Category Colors (Shopping) -->
+    <color name="cat_shopping_bg">#F3E5F5</color>
+    <color name="cat_shopping_accent">#8E24AA</color>
+    
+    <!-- Category Colors (Bills) -->
+    <color name="cat_bills_bg">#E8F5E9</color>
+    <color name="cat_bills_accent">#2E7D32</color>
+    
+    <!-- Category Colors (Other) -->
+    <color name="cat_other_bg">#ECEFF1</color>
+    <color name="cat_other_accent">#546E7A</color>
+    
+    <!-- Swipe Delete Background -->
+    <color name="swipe_delete_bg">#EF4444</color>
+</resources>
