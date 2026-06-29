@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+  <!-- Clipboard Body -->
+  <path
+      android:fillColor="#E2E8F0"
+      android:pathData="M40,25h40c5.5,0 10,4.5 10,10v60c0,5.5 -4.5,10 -10,10H40c-5.5,0 -10,-4.5 -10,-10V35c0,-5.5 4.5,-10 10,-10z"/>
+  <!-- Clipboard Clip -->
+  <path
+      android:fillColor="#94A3B8"
+      android:pathData="M50,15h20c2.2,0 4,1.8 4,4v8H46v-8c0,-2.2 1.8,-4 4,-4z"/>
+  <!-- Checklist lines -->
+  <path
+      android:fillColor="#CBD5E1"
+      android:pathData="M42,45h36v4H42zM42,57h26v4H42zM42,69h30v4H42z"/>
+  <!-- Glowing Checkmark -->
+  <path
+      android:fillColor="#10B981"
+      android:pathData="M78.5,60.5l-15,15 -7.5,-7.5 -2.8,2.8 10.3,10.3 17.8,-17.8z"/>
+</vector>

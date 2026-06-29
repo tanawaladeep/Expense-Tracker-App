@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Indigo Light Palette -->
+    <color name="light_primary">#4F46E5</color>
+    <color name="light_on_primary">#FFFFFF</color>
+    <color name="light_primary_container">#E0E7FF</color>
+    <color name="light_on_primary_container">#3730A3</color>
+    
+    <!-- Teal Light Palette -->
+    <color name="light_secondary">#0D9488</color>
+    <color name="light_on_secondary">#FFFFFF</color>
+    <color name="light_secondary_container">#CCFBF1</color>
+    <color name="light_on_secondary_container">#115E59</color>
+    
+    <!-- Amber Light Palette -->
+    <color name="light_tertiary">#D97706</color>
+    <color name="light_on_tertiary">#FFFFFF</color>
+    <color name="light_tertiary_container">#FEF3C7</color>
+    <color name="light_on_tertiary_container">#92400E</color>
+
+    <color name="light_background">#F8FAFC</color>
+    <color name="light_on_background">#0F172A</color>
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_on_surface">#0F172A</color>
+    <color name="light_surface_variant">#F1F5F9</color>
+    <color name="light_on_surface_variant">#475569</color>
+    <color name="light_outline">#CBD5E1</color>
+
+    <!-- Indigo Dark Palette -->
+    <color name="dark_primary">#818CF8</color>
+    <color name="dark_on_primary">#1E1B4B</color>
+    <color name="dark_primary_container">#312E81</color>
+    <color name="dark_on_primary_container">#E0E7FF</color>
+    
+    <!-- Teal Dark Palette -->
+    <color name="dark_secondary">#2DD4BF</color>
+    <color name="dark_on_secondary">#042F2E</color>
+    <color name="dark_secondary_container">#115E59</color>
+    <color name="dark_on_secondary_container">#CCFBF1</color>
+    
+    <!-- Amber Dark Palette -->
+    <color name="dark_tertiary">#FBBF24</color>
+    <color name="dark_on_tertiary">#78350F</color>
+    <color name="dark_tertiary_container">#78350F</color>
+    <color name="dark_on_tertiary_container">#FEF3C7</color>
+
+    <color name="dark_background">#0F172A</color>
+    <color name="dark_on_background">#F8FAFC</color>
+    <color name="dark_surface">#1E293B</color>
+    <color name="dark_on_surface">#F8FAFC</color>
+    <color name="dark_surface_variant">#334155</color>
+    <color name="dark_on_surface_variant">#94A3B8</color>
+    <color name="dark_outline">#475569</color>
+
+    <!-- Custom Status/Priority colors -->
+    <color name="priority_high">#EF4444</color>
+    <color name="priority_medium">#F59E0B</color>
+    <color name="priority_low">#3B82F6</color>
+    
+    <color name="priority_high_bg">#FEE2E2</color>
+    <color name="priority_medium_bg">#FEF3C7</color>
+    <color name="priority_low_bg">#DBEAFE</color>
+
+    <color name="priority_high_bg_dark">#7F1D1D</color>
+    <color name="priority_medium_bg_dark">#78350F</color>
+    <color name="priority_low_bg_dark">#1E3A8A</color>
+    
+    <color name="status_completed">#10B981</color>
+    <color name="status_in_progress">#3B82F6</color>
+    <color name="status_pending">#6B7280</color>
+
+    <color name="status_completed_bg">#D1FAE5</color>
+    <color name="status_in_progress_bg">#DBEAFE</color>
+    <color name="status_pending_bg">#F3F4F6</color>
+    
+    <!-- Category colors -->
+    <color name="cat_work">#6366F1</color>
+    <color name="cat_personal">#EC4899</color>
+    <color name="cat_shopping">#14B8A6</color>
+    <color name="cat_health">#10B981</color>
+    <color name="cat_study">#F59E0B</color>
+    <color name="cat_other">#8B5CF6</color>
+
+    <color name="cat_work_bg">#EEF2F6</color>
+    <color name="cat_personal_bg">#FDF2F8</color>
+    <color name="cat_shopping_bg">#F0FDFA</color>
+    <color name="cat_health_bg">#ECFDF5</color>
+    <color name="cat_study_bg">#FFFBEB</color>
+    <color name="cat_other_bg">#F5F3FF</color>
+</resources>
